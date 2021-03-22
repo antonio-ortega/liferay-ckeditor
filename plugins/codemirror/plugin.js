@@ -21,7 +21,7 @@
 					{
 						lineNumbers: true,
 						lineWrapping: true,
-						mode: 'text/html',
+						mode: 'text/html'
 					}
 				);
 
@@ -54,7 +54,7 @@
 						var newData = event.data;
 						var oldData = instance.codeMirrorEditor.getValue();
 						
-						if (newData !== oldData) {
+						if (newData && newData !== oldData) {
 							instance.codeMirrorEditor.setValue(newData);
 						}
 					}
